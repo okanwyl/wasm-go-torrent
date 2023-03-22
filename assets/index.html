@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="wasm_exec.js"></script>
+    <script>
+      const go = new Go();
+      WebAssembly.instantiateStreaming(
+        fetch("json.wasm"),
+        go.importObject
+      ).then((result) => {
+        go.run(result.instance);
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+  <script>
+    // var json = function (input) {
+    //   var result = formatJSON(input);
+    //   if (result != null && result.includes("error")) {
+    //     console.log("Go return value", result);
+    //     jsonoutput.value = "";
+    //     alert(result.error);
+    //   } else {
+    //     const textarea = document.getElementById("jsonoutput");
+
+    //     textarea.value = result;
+    //   }
+    // };
+  </script>
+</html>

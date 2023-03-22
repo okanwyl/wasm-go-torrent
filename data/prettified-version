@@ -1,0 +1,21 @@
+d
+  8:announce
+    41:http://bttracker.debian.org:6969/announce
+    7:comment
+      35:"Debian CD from cdimage.debian.org"
+    10:created by
+      13:mktorrent 1.1
+    13:creation date
+      i1671280646e
+    4:info
+      d
+      6:length
+        i2977595392e
+      4:name
+        34:debian-live-11.6.0-amd64-gnome.iso
+      12:piece length
+        i262144e
+      6:pieces
+        227180:£
+      e
+e
